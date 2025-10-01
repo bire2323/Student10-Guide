@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Natural Science vs Social Science Guide for Ethiopian Students
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ==== WebKit Browsers: Chrome, Edge, Safari ==== */
+::-webkit-scrollbar {
+  width: 18px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #0725eb, #d806e7);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff9900, #ff9d00);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ffa600, #ff9e01);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #2d3748;
+  line-height: 1.6;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.ethiopic-font {
+  font-family: "Noto Sans Ethiopic", sans-serif;
+  line-height: 1.8;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 7%;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-icon {
+  color: #e76f51;
+  font-size: 1.8rem;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.4rem;
+  background: linear-gradient(90deg, #e76f51 0%, #f4a261 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: linear-gradient(90deg, #e76f51 0%, #f4a261 100%);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  color: #e76f51;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+.nav-link.active {
+  color: #e76f51;
+  background: rgba(231, 111, 81, 0.1);
+}
+
+.nav-link.active::after {
+  width: 80%;
+}
+
+section {
+  padding: 5rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #e76f51 0%, #f4a261 100%);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.typewriter-container {
+  margin-bottom: 2rem;
+}
+
+#typewriter {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2d3748;
+  border-right: 3px solid #e76f51;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-right: 0.25rem;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #e76f51;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #e76f51 0%, #f4a261 100%);
+  color: white;
+  box-shadow: 0 4px 6px rgba(231, 111, 81, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(231, 111, 81, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.9);
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.btn-secondary:hover {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.info-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.info-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #e76f51, #f4a261);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #e76f51;
+  background: rgba(231, 111, 81, 0.1);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.bilingual-content {
+  margin-bottom: 1.5rem;
+}
+
+.english-text,
+.amharic-text {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.english-text {
+  background: rgba(66, 153, 225, 0.05);
+  border-left: 3px solid #4299e1;
+}
+
+.amharic-text {
+  background: rgba(72, 187, 120, 0.05);
+  border-left: 3px solid #48bb78;
+  direction: ltr;
+}
+
+.content-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.label-english {
+  background: #4299e1;
+}
+
+.label-amharic {
+  background: #48bb78;
+}
+
+.fields-grid,
+.work-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.field-item,
+.work-item {
+  background: #f7fafc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 3px solid #e76f51;
+  transition: all 0.3s ease;
+}
+
+.field-item:hover,
+.work-item:hover {
+  background: #edf2f7;
+  transform: translateX(5px);
+}
+
+.video-section {
+  margin-top: 4rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.video-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-info {
+  padding: 1.5rem;
+}
+
+.video-title {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-container {
+  background: white;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-top: 4rem;
+}
+
+.quiz-question {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.quiz-option {
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quiz-option:hover {
+  border-color: #e76f51;
+  background: rgba(231, 111, 81, 0.05);
+}
+
+.quiz-option.selected {
+  border-color: #e76f51;
+  background: rgba(231, 111, 81, 0.1);
+}
+
+#quiz-submit {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(90deg, #e76f51 0%, #f4a261 100%);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+#quiz-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 111, 81, 0.3);
+}
+
+.result-section {
+  text-align: center;
+  padding: 2rem;
+  background: #f7fafc;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  display: none;
+}
+
+footer {
+  background: #2d3748;
+  color: white;
+  padding: 3rem 5%;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #e76f51 0%, #f4a261 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  #typewriter {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .info-card {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .fields-grid,
+  .work-areas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
+
+h1,
+h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #e8f4f8;
+}
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 11px;
+  }
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-graduation-cap logo-icon"></i>
+          <div class="logo-text">Science Path Guide</div>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#home" class="nav-link active" data-target="home">Home</a>
+          </li>
+          <li>
+            <a href="#natural" class="nav-link" data-target="natural"
+              >Natural Science</a
+            >
+          </li>
+          <li>
+            <a href="#social" class="nav-link" data-target="social"
+              >Social Science</a
+            >
+          </li>
+          <li>
+            <a href="#videos" class="nav-link" data-target="videos">Videos</a>
+          </li>
+          <li><a href="#quiz" class="nav-link" data-target="quiz">Quiz</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="typewriter-container">
+        <div id="typewriter" style="width: 100%; text-wrap: wrap;margin: auto;">Choosing Between Natural and Social Sciences</div>
+      </div>
+      <p class="hero-subtitle">
+        A comprehensive guide for Ethiopian students to understand the
+        differences, career paths, and opportunities in Natural Science and
+        Social Science fields to make an informed decision about your future.
+      </p>
+      <div class="cta-buttons">
+        <a href="#natural" class="btn btn-primary">
+          <i class="fas fa-atom"></i> Explore Natural Science
+        </a>
+        <a href="#social" class="btn btn-secondary">
+          <i class="fas fa-users"></i> Explore Social Science
+        </a>
+      </div>
+    </section>
+
+    <section id="introduction">
+      <div class="section-title">
+        <h2>Introduction</h2>
+      </div>
+      <div class="info-card">
+        <div class="bilingual-content">
+          <div class="english-text">
+            <span class="content-label label-english">English</span>
+            <p>
+              Choosing between Natural Science and Social Science is an
+              important step for students in Ethiopia.
+            </p>
+          </div>
+          <div class="amharic-text">
+            <span class="content-label label-amharic">Amharic</span>
+            <p class="ethiopic-font">
+              በኢትዮጵያ ተማሪዎች በተፈጥሮ ሳይንስ እና ማህበራዊ ሳይንስ መካከል መምረጥ አስፈላጊ ደረጃ ነው።
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="natural">
+      <div class="section-title">
+        <h2>Natural Science</h2>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <i class="fas fa-atom"></i>
+          </div>
+          <h3 class="card-title">Meaning of Natural Science</h3>
+        </div>
+        <div class="bilingual-content">
+          <div class="english-text">
+            <span class="content-label label-english">English</span>
+            <p>
+              Natural Science is the study of the physical world, nature, and
+              the laws that govern them.
+            </p>
+          </div>
+          <div class="amharic-text">
+            <span class="content-label label-amharic">Amharic</span>
+            <p class="ethiopic-font">
+              ተፈጥሮ ሳይንስ የአካላዊ ዓለምን፣ ተፈጥሮን እና የሚያዛው ሕጎችን የሚመረምር ትምህርት ነው።
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h3 class="card-title">Fields of Natural Science</h3>
+        </div>
+        <div class="bilingual-content">
+          <div class="english-text">
+            <span class="content-label label-english">English</span>
+            <p>
+              It includes subjects like Biology, Chemistry, Physics,
+              Mathematics, Geology, and Computer Science.
+              and other fields that students join is agricultur, informatics( information technology, computer science, information system),
+              health office, farmacy, clinical health and medcine is belong.
+            </p>
+          </div>
+          <div class="amharic-text">
+            <span class="content-label label-amharic">Amharic</span>
+            <p class="ethiopic-font">
+              በውስጡ ባዮሎጂ፣ ኬሚስትሪ፣ ፊዚክስ፣ ማቲማቲክስ፣ ጂኦሎጂ እና ኮምፒውተር ሳይንስ ያካትታል። እና ተማሪዎች የሚገቡባቸዉ ትምህርቶች ግብርና  information technology, computer science, information system 
+              health office, farmacy, clinical health and medcine is belong.
+            </p>
+          </div>
+        </div>
+         <div class="english-text">
+            <p>
+              If you study natural sceince you get the below courses and departments in the next time.
+            </p>
+          </div>
+
+        <div class="fields-grid">
+          <div class="field-item">Biology: im medicine, health office(HO),pharmacy, enviromental health, veternary medicine(እንስሳት ህክምና), anstecia(ማደንዘ የሚወጋ)</div>
+          <div class="field-item">Chemistry: chemical engineering, መድሃኒት መከመም ፣ </div>
+          <div class="field-item">Physics</div>
+          <div class="field-item">Mathematics</div>
+          <div class="field-item">Geology</div>
+          <div class="field-item">Computer Science </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3 class="card-title">Work Areas of Natural Science Graduates</h3>
+        </div>
+        <div class="bilingual-content">
+          <div class="english-text">
+            <span class="content-label label-english">English</span>
+            <p>
+              Graduates can work in health,     education, technology, research
+              centers, industries, and environmental protection.
+            </p>
+          </div>
+          <div class="amharic-text">
+            <span class="content-label label-amharic">Amharic</span>
+            <p class="ethiopic-font">
+              የተመረቁ በጤና፣ ትምህርት፣ ቴክኖሎጂ፣ የምርምር ማዕከላት፣ ኢንዱስትሪ እና በአካባቢ ጥበቃ ስራ ላይ
+              መስራት ይችላሉ።
+            </p>
+          </div>
+        </div>
+        <div class="work-areas-grid">
+          <div class="work-item">Health Sector</div>
+          <div class="work-item">Education</div>
+          <div class="work-item">Technology</div>
+          <div class="work-item">Research Centers</div>
+          <div class="work-item">Industries</div>
+          <div class="work-item">Environmental Protection</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="social">
+      <div class="section-title">
+        <h2>Social Science</h2>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="card-title">Meaning of Social Science</h3>
+        </div>
+        <div class="bilingual-content">
+          <div class="english-text">
+            <span class="content-label label-english">English</span>
+            <p>
+              Social Science is the study of human society, behavior, culture,
+              and relationships among people.
+            </p>
+          </div>
+          <div class="amharic-text">
+            <span class="content-label label-amharic">Amharic</span>
+            <p class="ethiopic-font">
+              ማህበራዊ ሳይንስ የሰው ማህበረሰብን፣ ባህልን፣ ባህሪን እና በሰዎች መካከል ያለውን ግንኙነት የሚመረምር
+              ትምህርት ነው።
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <i class="fas fa-globe-africa"></i>
+          </div>
+          <h3 class="card-title">Fields of Social Science</h3>
+        </div>
+        <div class="bilingual-content">
+          <div class="english-text">
+            <span class="content-label label-english">English</span>
+            <p>
+              It includes subjects like Sociology, Psychology, Political
+              Science, Anthropology, History, Geography, and Economics.
+            </p>
+          </div>
+          <div class="amharic-text">
+            <span class="content-label label-amharic">Amharic</span>
+            <p class="ethiopic-font">
+              በውስጡ ሶሲዮሎጂ፣ ሳይኮሎጂ፣ ፖለቲካዊ ሳይንስ፣ አንትሮፖሎጂ፣ ታሪክ፣ ጂኦግራፊ እና ኢኮኖሚክስ
+              ያካትታል።
+            </p>
+          </div>
+        </div>
+        <div class="fields-grid">
+          <div class="field-item">Sociology</div>
+          <div class="field-item">Psychology</div>
+          <div class="field-item">Political Science</div>
+          <div class="field-item">Anthropology</div>
+          <div class="field-item">History</div>
+          <div class="field-item">Geography</div>
+          <div class="field-item">Economics</div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <div class="card-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3 class="card-title">Work Areas of Social Science Graduates</h3>
+        </div>
+        <div class="bilingual-content">
+          <div class="english-text">
+            <span class="content-label label-english">English</span>
+            <p>
+              Graduates can work in government offices, education, NGOs, social
+              development programs, research, and international organizations.
+            </p>
+          </div>
+          <div class="amharic-text">
+            <span class="content-label label-amharic">Amharic</span>
+            <p class="ethiopic-font">
+              የተመረቁ በመንግስት ቢሮዎች፣ ትምህርት፣ ኤን.ጂ.ኦ.ዎች፣ የማህበረሰብ ልማት ፕሮግራሞች፣ ምርምር እና
+              አለም አቀፍ ድርጅቶች ላይ መስራት ይችላሉ።
+            </p>
+          </div>
+        </div>
+        <div class="work-areas-grid">
+          <div class="work-item">Government Offices</div>
+          <div class="work-item">Education</div>
+          <div class="work-item">NGOs</div>
+          <div class="work-item">Social Development Programs</div>
+          <div class="work-item">Research</div>
+          <div class="work-item">International Organizations</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conclusion">
+      <div class="section-title">
+        <h2>Conclusion & Advice</h2>
+      </div>
+      <div class="info-card">
+        <div class="bilingual-content">
+          <div class="english-text">
+            <span class="content-label label-english">English</span>
+            <p>
+              Students should choose their field based on their interest,
+              talent, and the contribution they want to make to Ethiopia.
+            </p>
+          </div>
+          <div class="amharic-text">
+            <span class="content-label label-amharic">Amharic</span>
+            <p class="ethiopic-font">
+              ተማሪዎች የራሳቸውን ፍላጎት፣ ችሎታ እና ለኢትዮጵያ ማድረግ የሚፈልጉትን አስተዋፅኦ በመመርኮዝ መምረጥ
+              አለባቸው።
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos">
+      <div class="section-title">
+        <h2>Related Videos</h2>
+      </div>
+
+      <div class="video-grid ">
+        
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/cK7R0n1em6M?si=GyhKql5137-6ZXBu"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">
+              AAU Undergraduate Programs and Departments
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+      <div class="section-title" style="margin-top: 10px;">
+        <h2>natural science</h2>
+      </div>
+<div class="video-grid">
+   <div class="video-card">
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/UdLJu1Yc0N4?si=VBLPxDJ-gGva5HeT"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">Courses in natural science</div>
+          </div>
+        </div>
+
+
+   <div class="video-card">
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rPvj6oLp9kU?si=fUUu5ipW-njHhitL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">natural science course breakdown</div>
+          </div>
+        </div>
+
+</div>
+      <div class="section-title" style="margin-top: 10px;">
+        <h2>social science</h2>
+      </div>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/VOws3V-aq3A?si=_AeAO-EC_toPEc1M"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">Courses in social science</div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/76o9zjAtWjg?si=H6sOwBVt0oX6dP2C"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">Courses in social science</div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/4CQoIvVbRBs?si=-TYrCqP81sv_maN2"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">
+              Social Science in Ethiopia University Courses
+            </div>
+          </div>
+      </div>
+      <div class="video-card">
+          <div class="video-wrapper">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/GLfB-1EKfyI?si=K-c1QGDca0DeWUS3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-title">
+              Social Science in Courses
+            </div>
+          </div>
+      </div>
+    </section>
+
+<section>
+   <div class="section-title">
+        <h2>ethiopia university </h2>
+      </div>
+
+    <div>
+      <h1>Natural and Social Sciences in Ethiopia</h1>
+    <h2>Natural Sciences</h2>
+    </div>
+    <table >
+        <tr>
+            <th>University/College</th>
+            <th>Departments</th>
+            <th>Primary Work Areas</th>
+        </tr>
+        <tr>
+            <td>Addis Ababa University - College of Natural and Computational Sciences</td>
+            <td>Biology, Chemistry, Computer Science, Geology, Mathematics, Physics, Statistics</td>
+            <td>Research in computational modeling, geophysics, bioinformatics; programs in environmental science and data analysis; focus on sustainable development and innovation.</td>
+        </tr>
+        <tr>
+            <td>Jimma University - College of Natural Sciences</td>
+            <td>Biology, Chemistry, Mathematics, Physics, Statistics, Sport Science</td>
+            <td>Emphasis on health-related sciences, statistical modeling for agriculture, and physics applications in energy; research in tropical diseases and ecosystem management.</td>
+        </tr>
+        <tr>
+            <td>Arba Minch University - College of Natural Sciences</td>
+            <td>Biology, Chemistry, Geology, Physics</td>
+            <td>Demand-driven research in biological sciences, water resources, and earth sciences; focus on responsible citizenship and sustainability.</td>
+        </tr>
+        <tr>
+            <td>Wollo University - College of Natural Science</td>
+            <td>Biology, Chemistry, Geology, Mathematics, Physics, Sport Science</td>
+            <td>Postgraduate programs in regular, summer, and extension modes; research in applied geology and sports health.</td>
+        </tr>
+        <tr>
+            <td>Adigrat University - College of Natural Sciences</td>
+            <td>Biology, Biotechnology, Chemistry, Geology, Mathematics, Physics, Sport Science</td>
+            <td>Undergraduate focus on biotechnology applications, mineral exploration, and mathematical modeling for local industries.</td>
+        </tr>
+        <tr>
+            <td>Dilla University - College of Natural and Computational Science</td>
+            <td>Applied Biology, Applied Chemistry, Geology, Applied Mathematics, Statistics, Applied Sport Sciences, Applied Physics</td>
+            <td>Applied research in environmental geology, statistical analysis for development, and sports physiology.</td>
+        </tr>
+        <tr>
+            <td>Wolkite University - Natural & Computational Sciences</td>
+            <td>Biology, Chemistry, Mathematics, Physics, Statistics, Geology, Computer Science</td>
+            <td>Industry collaboration in areas like computational chemistry and biological conservation.</td>
+        </tr>
+        <tr>
+            <td>Adama Science and Technology University - School of Applied Natural Science</td>
+            <td>Applied Biology, Applied Chemistry, Industrial Chemistry, Biotechnology, Environmental Science</td>
+            <td>Programs in industrial applications, chemical engineering, and environmental protection.</td>
+        </tr>
+    </table>
+
+    <h2>Social Sciences</h2>
+    <table>
+        <tr>
+            <th>University/College</th>
+            <th>Departments</th>
+            <th>Primary Work Areas</th>
+        </tr>
+        <tr>
+            <td>Addis Ababa University - College of Social Sciences</td>
+            <td>Archaeology and Heritage Management, Geography and Environmental Studies, History, Political Science and International Relations, Social Anthropology, Sociology</td>
+            <td>Focus on heritage preservation, geopolitical analysis, and social dynamics; research in urban studies and conflict resolution.</td>
+        </tr>
+        <tr>
+            <td>Haramaya University - College of Social Sciences and Humanities</td>
+            <td>Sociology, Geography, History, Political Science, English Language and Literature</td>
+            <td>Interdisciplinary research in education, empowerment, language, culture, and governance; aims for leading role in East Africa.</td>
+        </tr>
+        <tr>
+            <td>Jimma University - College of Social Sciences and Humanities</td>
+            <td>Sociology, Law (integrated), History</td>
+            <td>Graduate studies in social justice, legal research, and community development.</td>
+        </tr>
+        <tr>
+            <td>Wollo University - College of Social Science and Humanities</td>
+            <td>Geography, History and Heritage Management, Sociology, Political Science, English, Journalism</td>
+            <td>Quality education in humanities; research on regional histories and media studies.</td>
+        </tr>
+        <tr>
+            <td>Arba Minch University - College of Social Sciences and Humanities</td>
+            <td>Sociology, Geography, History, Political Science</td>
+            <td>Research in social justice, peace and conflict studies, and community engagement.</td>
+        </tr>
+        <tr>
+            <td>Debre Berhan University - College of Social Sciences & Humanities</td>
+            <td>Amharic Language & Literature, English Language & Literature, Geography & Environmental Studies, History & Heritage Management, Political Science & International Relations, Social Anthropology, Sociology</td>
+            <td>Studies in language preservation, environmental policy, and anthropological fieldwork.</td>
+        </tr>
+        <tr>
+            <td>Jigjiga University - College of Social Sciences and Humanities</td>
+            <td>Sociology, Journalism and Communications, Ethiopian Languages and Literature, English Language and Literature, Political Science</td>
+            <td>Undergraduate programs in media, linguistics, and governance; focus on Somali region contexts.</td>
+        </tr>
+        <tr>
+            <td>Dilla University - College of Social Science And Humanities</td>
+            <td>Intercultural Relations and Governance, Peace and Conflict Studies, Teaching Amharic</td>
+            <td>Research in peacebuilding, governance, and Amharic language education.</td>
+        </tr>
+    </table>
+
+</section>
+   
+
+
+
+
+
+
+
+    <section id="quiz">
+      <div class="section-title">
+        <h2>Which Science is Right for You?</h2>
+      </div>
+
+      <div class="quiz-container">
+        <div class="quiz-question">
+          <p class="font-bold">1. What type of problems interest you most?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="natural">
+              How chemicals interact at molecular level
+            </div>
+            <div class="quiz-option" data-value="social">
+              Why people behave differently in groups
+            </div>
+            <div class="quiz-option" data-value="both">
+              Both interest me equally
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <p class="font-bold">2. What's your preferred working environment?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="natural">
+              Laboratory with precise equipment
+            </div>
+            <div class="quiz-option" data-value="social">
+              Field work interacting with people
+            </div>
+            <div class="quiz-option" data-value="both">Mix of both</div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <p class="font-bold">3. What skills do you excel at?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="natural">
+              Math, data analysis, and technical skills
+            </div>
+            <div class="quiz-option" data-value="social">
+              Communication, writing, and critical thinking
+            </div>
+            <div class="quiz-option" data-value="both">
+              I'm good at both sets
+            </div>
+          </div>
+        </div>
+
+        <button id="quiz-submit">Get Results</button>
+
+        <div class="result-section" id="quiz-result">
+          <h3 class="text-xl font-bold mb-4">Your Science Match:</h3>
+          <p id="result-text" class="text-lg mb-4"></p>
+          <p id="result-detail" class="text-gray-700"></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          © 2023 Science Path Guide for Ethiopian Students. All rights reserved.
+        </p>
+        <p>
+          Designed to help students make informed decisions about their academic
+          future.
+        </p>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script  >
+      // Typewriter effect
+const textElement = document.getElementById("typewriter");
+const text = textElement.textContent;
+textElement.textContent = "";
+let i = 0;
+let isDeleting = false;
+let typingSpeed = 100;
+let deletingSpeed = 50;
+let pauseTime = 2000;
+
+function type() {
+  if (!isDeleting && i < text.length) {
+    textElement.textContent = text.substring(0, i + 1);
+    i++;
+    setTimeout(type, typingSpeed);
+  } else if (isDeleting && i > 0) {
+    textElement.textContent = text.substring(0, i - 1);
+    i--;
+    setTimeout(type, deletingSpeed);
+  } else {
+    isDeleting = !isDeleting;
+    setTimeout(type, pauseTime);
+  }
+}
+type();
+
+// Smooth scroll + active nav
+const navlinks = document.querySelectorAll(".nav-link");
+let activeLink = document.querySelector(".nav-link.active");
+
+navlinks.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (activeLink) activeLink.classList.remove("active");
+    this.classList.add("active");
+    activeLink = this;
+
+    const targetId = this.getAttribute("data-target");
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
+// Update active nav link on scroll
+window.addEventListener("scroll", function () {
+  const sections = document.querySelectorAll("section");
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - 100) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navlinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("data-target") === current) {
+      link.classList.add("active");
+      activeLink = link;
+    }
+  });
+
+  // Show/hide back to top button
+  const backToTop = document.getElementById("backToTop");
+  if (window.pageYOffset > 300) {
+    backToTop.classList.add("visible");
+  } else {
+    backToTop.classList.remove("visible");
+  }
+});
+
+// Back to top functionality
+document.getElementById("backToTop").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// Quiz functionality
+const quizOptions = document.querySelectorAll(".quiz-option");
+const quizSubmit = document.getElementById("quiz-submit");
+const resultSection = document.getElementById("quiz-result");
+const resultText = document.getElementById("result-text");
+const resultDetail = document.getElementById("result-detail");
+
+let answers = [];
+
+quizOptions.forEach((option) => {
+  option.addEventListener("click", function () {
+    // Remove selected class from siblings
+    const siblings = this.parentNode.querySelectorAll(".quiz-option");
+    siblings.forEach((sib) => sib.classList.remove("selected"));
+
+    // Add selected class to clicked option
+    this.classList.add("selected");
+
+    // Store answer
+    const questionIndex = Array.from(
+      document.querySelectorAll(".quiz-question")
+    ).indexOf(this.closest(".quiz-question"));
+    answers[questionIndex] = this.dataset.value;
+  });
+});
+
+quizSubmit.addEventListener("click", function () {
+  if (answers.length < 3) {
+    alert("Please answer all questions!");
+    return;
+  }
+
+  // Calculate result
+  const counts = { natural: 0, social: 0, both: 0 };
+  answers.forEach((answer) => counts[answer]++);
+
+  let result, detail;
+  if (counts.natural > counts.social && counts.natural > counts.both) {
+    result = "Natural Sciences";
+    detail =
+      "Your analytical mind and interest in the physical world make you a great fit for natural sciences. Consider exploring fields like biology, chemistry, or physics.";
+  } else if (counts.social > counts.natural && counts.social > counts.both) {
+    result = "Social Sciences";
+    detail =
+      "Your curiosity about human behavior and society suggests social sciences would be rewarding for you. Look into psychology, sociology, or political science.";
+  } else {
+    result = "Both!";
+    detail =
+      "You have balanced interests that could thrive in interdisciplinary fields. Consider areas like behavioral economics, environmental policy, or medical anthropology that combine both sciences.";
+  }
+
+  resultText.textContent = result;
+  resultDetail.textContent = detail;
+  resultSection.style.display = "block";
+  resultSection.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+    </script>
+  </body>
+</html>
